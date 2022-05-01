@@ -1,22 +1,19 @@
-pragma solidity ^0.5.16;
-import "./ERC721/ERC721Token.sol";
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
 
-/**
- * @title Repository of ERC721 Deeds
- * This contract contains the list of deeds registered by users.
- * This is a demo to show how tokens (deeds) can be minted and added 
- * to the repository.
- */
-contract DeedRepository is ERC721Token {
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+contract DeedRepository is ERC721{
 
-    /**
+  mapping (uint256 => string) private _tokenURIs;
+
+  /**
     * @dev Created a DeedRepository with a name and symbol
     * @param _name string represents the name of the repository
     * @param _symbol string represents the symbol of the repository
     */
     constructor(string memory _name, string memory _symbol) 
-        public ERC721Token(_name, _symbol) {}
+        ERC721(_name, _symbol) {}
     
     /**
     * @dev Public function to register a new deed
@@ -37,7 +34,7 @@ contract DeedRepository is ERC721Token {
     * @return whether the deed metadata was added to the repository
     */
     function addDeedMetadata(uint256 _tokenId, string memory _uri) public returns(bool){
-        _setTokenURI(_tokenId, _uri);
+        _tokenURIs[_tokenId] = _uri;
         return true;
     }
 

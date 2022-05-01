@@ -1,15 +1,10 @@
-pragma solidity ^0.5.16;
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.9.0;
 
 import "./DeedRepository.sol";
 
-/**
- * @title Auction Repository
- * This contracts allows auctions to be created for non-fungible tokens
- * Moreover, it includes the basic functionalities of an auction house
- */
 contract AuctionRepository {
-    
-    // Array with all auctions
+  // Array with all auctions
     Auction[] public auctions;
 
     // Mapping from auction index to user bids
@@ -60,9 +55,9 @@ contract AuctionRepository {
     /**
     * @dev Disallow payments to this contract directly
     */
-    function() external {
-        revert();
-    }
+    // function() external {
+    //     revert();
+    // }
 
     /**
     * @dev Gets the length of auctions
@@ -113,7 +108,7 @@ contract AuctionRepository {
         return auctionOwner[_owner].length;
     }
 
-    /**
+    /*
     * @dev Gets the info of a given auction which are stored within a struct
     * @param _auctionId uint ID of the auction
     * @return string name of the auction
@@ -169,7 +164,7 @@ contract AuctionRepository {
         newAuction.metadata = _metadata;
         newAuction.deedId = _deedId;
         newAuction.deedRepositoryAddress = _deedRepositoryAddress;
-        newAuction.owner = msg.sender;
+        newAuction.owner = payable(msg.sender);
         newAuction.active = true;
         newAuction.finalized = false;
         
@@ -283,7 +278,7 @@ contract AuctionRepository {
 
         // insert bid 
         Bid memory newBid;
-        newBid.from = msg.sender;
+        newBid.from = payable(msg.sender);
         newBid.amount = ethAmountSent;
         auctionBids[_auctionId].push(newBid);
         emit BidSuccess(msg.sender, _auctionId);
