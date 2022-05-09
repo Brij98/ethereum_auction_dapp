@@ -4,7 +4,7 @@ This project aims to implement basic functionalities of an auction platform usin
 
 ## Team Members
 1. Brijesh Prajapati - Email: 
-2. Kayla Nguyen - Email: knguyen1170@csu.fullerton.edu
+2. Kayla Nguyen - CWID: 802935866 - Email: knguyen1170@csu.fullerton.edu
 3. Afolabi Olabode - Email: 
 4. Zhiwei Su - Email:
 
