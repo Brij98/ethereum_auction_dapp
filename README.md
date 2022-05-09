@@ -3,10 +3,10 @@
 This project aims to implement basic functionalities of an auction platform using Ethereum.
 
 ## Team Members
-1. Brijesh Prajapati - Email: 
-2. Kayla Nguyen - CWID: 802935866 - Email: knguyen1170@csu.fullerton.edu
+1. Brijesh Prajapati - CWID: 885909267, Email: brijesh.prajapati@csu.fullerton.edu 
+2. Kayla Nguyen - CWID: 802935866, Email: knguyen1170@csu.fullerton.edu
 3. Afolabi Olabode - CWID: 889125852, Email: aolabode@csu.fullerton.edu
-4. Zhiwei Su - Email:
+4. Zhiwei Su - CWID:887367936, Email:zwsu@csu.fullerton.edu
 
 ## Link to Original Project
 https://github.com/ethereumbook/ethereumbook/blob/develop/12dapps.asciidoc
