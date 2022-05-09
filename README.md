@@ -79,9 +79,9 @@ If there is an auction winner, the asset/token/deed is transferred to the bidder
 1. Clone project into preferred development environment
 2. cd into backend folder and deploy contracts to Ganache local network
 3. Run:
-    $ truffle init (creates necessary folders)
-    $ truffle compile (compiles contracts)
-    $ truffle migrate (compile smart contracts & uses migration.js to deploy contracts)
+    - $ truffle init (creates necessary folders)
+    - $ truffle compile (compiles contracts)
+    - $ truffle migrate (compile smart contracts & uses migration.js to deploy contracts)
 ** Before deploying contracts, make sure to edit truffle-config.js to deploy to correct local network and don't forget to link project to Ganache.
 4. Install web3. This is for connecting the contract.
     $ npm install -s web3@1.0.0-beta.37
