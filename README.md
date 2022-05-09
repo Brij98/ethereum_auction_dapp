@@ -3,10 +3,10 @@
 This project aims to implement basic functionalities of an auction platform using Ethereum.
 
 ## Team Members
-Brijesh Prajapati - Email: 
-Kayla Nguyen - Email: knguyen1170@csu.fullerton.edu
-Afolabi Olabode - Email: 
-Zhiwei Su - Email:
+1. Brijesh Prajapati - Email: 
+2. Kayla Nguyen - Email: knguyen1170@csu.fullerton.edu
+3. Afolabi Olabode - Email: 
+4. Zhiwei Su - Email:
 
 ## Link to Original Project
 https://github.com/ethereumbook/ethereumbook/blob/develop/12dapps.asciidoc
