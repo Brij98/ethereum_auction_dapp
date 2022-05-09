@@ -2,6 +2,9 @@
 
 This project aims to implement basic functionalities of an auction platform using Ethereum.
 
+## Team Members
+Brijesh Prajapati, Kayla Nguyen, Afolabi Olabode, Zhiwei Su
+
 ## Requirements
 
 ![Auction Diagram](auction_diagram.png)
